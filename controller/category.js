@@ -1,6 +1,7 @@
 import { categoryModel } from '../Model/Product.js'
 
 export const postCategory=async(req,res)=>{
+    res.setHeader("Access-Control-Allow-Credentials","true");
     try{
        
         const category = req.body;
